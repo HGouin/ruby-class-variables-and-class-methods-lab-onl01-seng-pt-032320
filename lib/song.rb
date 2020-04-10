@@ -9,13 +9,19 @@ class Song
     @artist = artist
     @genre = genre
     @@count+=1
-    @@genres
+    @@genres << genre
+    @@artists << artist
   end
   def count
     @@count
   end
   def genres
-    @@genres
+    unique_genres = []
+    @@genres.each do |genre|
+      if !genres.include? genre
+        @@genres << genre
+      end
+    end    
   end
 
 
