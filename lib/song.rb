@@ -12,11 +12,11 @@ class Song
     @@genres << genre
     @@artists << artist
   end
-  
+
   def self.count
     @@count
   end
-  
+
   def genres
     unique_genres = []
     @@genres.each do |genre|
