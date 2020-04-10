@@ -17,7 +17,15 @@ class Song
     @@count
   end
 
-
+  def self.genres
+    unique_genres = []
+    @@genres.each do |genre|
+      if !unique_genres.include? genre
+        unique_genres << genre
+      end
+    end
+    unique_genres
+  end
 
   def self.artists
     unique_artists = []
