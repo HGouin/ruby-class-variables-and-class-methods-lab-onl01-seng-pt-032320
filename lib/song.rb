@@ -22,6 +22,7 @@ class Song
         unique_genres << genre
       end
     end
+    unique_genres
   end
 
 
