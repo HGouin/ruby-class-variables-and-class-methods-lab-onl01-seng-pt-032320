@@ -21,7 +21,7 @@ class Song
       if !genres.include? genre
         @@genres << genre
       end
-    end    
+    end
   end
 
 
