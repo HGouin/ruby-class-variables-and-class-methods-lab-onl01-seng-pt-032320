@@ -37,5 +37,16 @@ class Song
     unique_artists
   end
 
+  def self.genre_count
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre] == nil
+
+      end
+    end
+
+    genre_count
+  end
+
 
 end
